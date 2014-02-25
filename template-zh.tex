@@ -1,0 +1,136 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{casual}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+% \usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+% \usepackage{CJKutf8}
+\usepackage{ctex}
+
+% 调整页面出血
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+
+% 个人信息
+\name{李}{天祎}
+\title{个人简历}                     % 可选项、如不需要可删除本行
+\address{271000}{ 泰安}            % 可选项、如不需要可删除本行
+\phone[mobile]{18653814817}              % 可选项、如不需要可删除本行
+\email{noclyt@gmail.com}                    % 可选项、如不需要可删除本行
+\homepage{www.noclyt.com}                  % 可选项、如不需要可删除本行
+%\photo[64pt][0.4pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+% \quote{引言(可选项)}                          % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+% \begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
+\maketitle
+
+\section{教育背景}
+\cventry{2011年 -- 至今}{本科 --- 计算机科学与技术} {山东农业大学}{泰安}{\textit{成绩 --前15\%}}{}  % 第3到第6编码可留白
+
+\section{个人经历}
+\subsection{专业}
+
+\cventry{2012年 -- 2013年}{ACM/ICPC}{算法}{}{}{
+对各类算法都有涉猎，主要擅长解动态规划和数据结构问题，大一大二时代表学校参加山东省ACM/ICPC和亚洲区域赛，除参加比赛以外，身为学校11级ACM/ICPC队长,也乐于积极组织校间对抗赛以及新队员培训工作。
+\newline{}\newline{}
+}
+
+\cventry{2013年}{山东农业大学教务管理系统}{期末考场及监考教师分配算法优化}{}{}{
+问题: 山东农业大学有共三个校区，每个校区大小不同，对应的居民区的老师数量不同，每个老师的需求不同，而学校要求尽量安排较少的校车来协调跨校区监考等问题交错在一起。 (本算法已运用于实际生产生活)
+\newline{}\newline{}
+优化后的效果：
+\begin{itemize}%
+\item 采用面向对象方法改写，使代码更利于维护。
+\item 运行时间大大减小，由原来的90s+优化到了10s内。
+\item 大部分老师需求得到平衡，较之前减少了校车总量。 \newline{}
+\end{itemize}}
+
+\subsection{项目}
+\cventry{2012年6月}{学生信息管理系统}{}{}{}{
+学习JSP和Tomcat，并通过该系统练习了数据库“增删改查”操作。额外实现了“将数据导出为Excel文件”的功能。}
+
+\cventry{2013年12月}{安卓实训}{学校组织}{}{}{
+掌握了安卓开发基本知识，学习运用Intent以及相关的三大组件(Activity,Service和BroadcastReceiver)。
+\newline{}
+独立完成的APP：
+\begin{itemize}%
+\item 打砖块游戏
+\item 监听通话与短信的安全管理软件 \newline{}
+\end{itemize}
+}
+
+\subsection{机器学习}
+\cventry{2013年}{自修网络公开课}{}{}{}{
+热爱机器学习这门学科。\newline{}
+已经在网上自修了斯坦福大学《Machine Learning》(讲师 Andrew Ng)和台湾国立大学《机器学习技法》(讲师 林轩田)公开课。\newline{}
+}
+
+\cventry{2014年}{主持一个基于机器学习的学校SRT项目}{}{}{}{
+项目名称：《基于SVM的安卓恶意APP检测》。\newline{}
+基本思想：通过对安卓APP反编译，进而提取特征值，利用SVM构建分类器，从而实现主动检测一个未知APP是否为恶意。\newline{}
+本项目2014年初获学校审批通过，正在进行中。\newline{}
+}
+
+
+\section{奖项}
+\cvlistitem{2012年 第三届山东省ACM程序设计竞赛 铜奖}
+\cvlistitem{2012年 山东农业大学第一届算法大赛 第一名}
+\cvlistitem{2012年 ACM/ICPC Regional 成都赛区 铜奖}
+\cvlistitem{2013年 ACM/ICPC 长春赛区邀请赛 银奖}
+\cvlistitem{2013年 第四届山东省ACM程序设计竞赛 银奖}
+
+\section{计算机技能}
+\cvitem{扎实}{C++, 算法和数据结构, 计算机组成原理}
+\cvitem{掌握}{Python, Java, 机器学习} {}{}
+
+
+\section{个人兴趣}
+\cvlistitem{一个科幻文学爱好者}
+\cvlistitem{喜欢在MOOC网站上自修公开课}
+\cvlistitem{对计算机底层很是向往，但又希望通过机器学习乘上“大数据时代”的快车}
+\cvlistitem{喜欢探究学习新事物}
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\clearpage
+%\end{CJK}
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
